@@ -4,8 +4,22 @@
   "description": "ESLint sharable config: prettier & standard for vue",
   "main": "index.js",
   "repository": "git@github.com:uscreen/eslint-config-prettystandard-vue.git",
+  "homepage": "https://github.com/uscreen/eslint-config-prettystandard-vue",
   "author": "Marcus Spiegel <spiegel@uscreen.de>",
   "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint '**/*.js' --fix"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "prettier",
+    "standard",
+    "vue"
+  ],
   "dependencies": {
     "@vue/eslint-config-standard": "^5.1.2",
     "babel-eslint": "^10.1.0",
@@ -18,5 +32,15 @@
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^2.1.2"
+  },
+  "devDependencies": {
+    "lint-staged": "^10.3.0",
+    "yorkie": "^2.0.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   }
 }
