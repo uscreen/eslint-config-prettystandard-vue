@@ -1,6 +1,6 @@
 {
   "name": "@uscreen.de/eslint-config-prettystandard-vue",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ESLint sharable config: prettier & standard for vue",
   "main": "index.js",
   "repository": "git@github.com:uscreen/eslint-config-prettystandard-vue.git",
@@ -23,18 +23,18 @@
   "dependencies": {
     "@vue/eslint-config-standard": "^6.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.15.0",
-    "eslint-config-prettier": "^7.0.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.2.0",
-    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-standard": "^5.0.0",
-    "eslint-plugin-vue": "^7.2.0",
+    "eslint-plugin-vue": "^7.8.0",
     "prettier": "^2.2.1"
   },
   "devDependencies": {
-    "lint-staged": "^10.5.3",
+    "lint-staged": "^10.5.4",
     "yorkie": "^2.0.0"
   },
   "lint-staged": {
