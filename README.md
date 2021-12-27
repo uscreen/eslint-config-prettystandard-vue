@@ -54,6 +54,7 @@ This includes Prettier configuration, so you don't need to apply any extra `.pre
 
 - eslint 8.5.x
 - prettier 2.5.x
+- vue-eslint-parser replaces @babel/eslint-parser
 
 ### v0.0.0
 
