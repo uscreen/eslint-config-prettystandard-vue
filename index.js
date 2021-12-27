@@ -1,8 +1,5 @@
 module.exports = {
-  parser: '@babel/eslint-parser',
-  parserOptions: {
-    requireConfigFile: false
-  },
+  parser: 'vue-eslint-parser',
   root: true,
   env: {
     node: true
@@ -17,6 +14,10 @@ module.exports = {
     'space-before-function-paren': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+
+    // vue3 specific
+    'vue/no-multiple-template-root': 'off',
+
     'prettier/prettier': [
       'error',
       {
