@@ -1,4 +1,8 @@
 module.exports = {
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false
+  },
   root: true,
   env: {
     node: true
@@ -24,8 +28,5 @@ module.exports = {
         htmlWhitespaceSensitivity: 'ignore'
       }
     ]
-  },
-  parserOptions: {
-    parser: 'babel-eslint'
   }
 }
