@@ -27,15 +27,15 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^4.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.1.1",
     "prettier": "^2.7.0",
-    "vue-eslint-parser": "^9.0.2"
+    "vue-eslint-parser": "^9.0.3"
   },
   "devDependencies": {
     "husky": ">=8.0.1",
-    "lint-staged": ">=13.0.1"
+    "lint-staged": ">=13.0.3"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
