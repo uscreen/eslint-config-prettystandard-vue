@@ -1,6 +1,6 @@
 {
   "name": "@uscreen.de/eslint-config-prettystandard-vue",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "ESLint sharable config: prettier & standard for vue",
   "main": "index.js",
   "repository": "git@github.com:uscreen/eslint-config-prettystandard-vue.git",
