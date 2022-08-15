@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "@vue/eslint-config-standard": "^6.0.0",
-    "eslint": "^8.21.0",
+    "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
