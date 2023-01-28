@@ -1,6 +1,10 @@
+<!--
+ We don't use file extension `.vue` to avoid problems with automatic linting in editor
+-->
+
 <template>
   <img alt="Vue logo" src="/assets/logo.png" />
-  <div v-for="todo in todos" :key="todo" />
+  <div v-for="todo in todos" />
   <HelloWorld msg="Hello Vue 3 + Vite" />
 </template>
 
