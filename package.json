@@ -25,7 +25,7 @@
     "vue"
   ],
   "dependencies": {
-    "@vue/eslint-config-standard": "^6.0.0",
+    "@vue/eslint-config-standard": "^8.0.1",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
