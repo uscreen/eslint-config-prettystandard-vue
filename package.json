@@ -13,7 +13,7 @@
   "scripts": {
     "test": "c8 tap",
     "test:cov": "c8 --reporter=html --reporter=text tap",
-    "test:ci": "tap",
+    "test:ci": "c8 --reporter=lcovonly tap",
     "lint": "eslint '**/*.js' --fix",
     "prepare": "husky install"
   },

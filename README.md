@@ -1,6 +1,9 @@
 # @uscreen.de/eslint-config-prettystandard-vue
 
+[![Test CI](https://github.com/uscreen/eslint-config-prettystandard-vue/actions/workflows/main.yml/badge.svg)](https://github.com/uscreen/eslint-config-prettystandard-vue/actions/workflows/main.yml)
+[![Test Coverage](https://coveralls.io/repos/github/uscreen/eslint-config-prettystandard-vue/badge.svg?branch=master)](https://coveralls.io/github/uscreen/eslint-config-prettystandard-vue?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/uscreen/eslint-config-prettystandard-vue/badge.svg?targetFile=package.json)](https://snyk.io/test/github/uscreen/eslint-config-prettystandard-vue?targetFile=package.json)
+[![NPM Version](https://badge.fury.io/js/@uscreen.de%2Feslint-config-prettystandard-vue.svg)](https://badge.fury.io/js/@uscreen.de%2Feslint-config-prettystandard-vue)
 
 > ESLint sharable config: prettier &amp; standard for Vue
 
