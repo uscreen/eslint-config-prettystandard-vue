@@ -3,8 +3,11 @@
   "version": "0.3.12",
   "description": "ESLint sharable config: prettier & standard for vue",
   "main": "index.js",
-  "repository": "git@github.com:uscreen/eslint-config-prettystandard-vue.git",
   "homepage": "https://github.com/uscreen/eslint-config-prettystandard-vue",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uscreen/eslint-config-prettystandard-vue.git"
+  },
   "author": "Marcus Spiegel <spiegel@uscreen.de>",
   "license": "MIT",
   "files": [
