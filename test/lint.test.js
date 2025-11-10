@@ -1,13 +1,14 @@
 const fs = require('fs')
 const path = require('path')
 const { ESLint } = require('eslint')
-const tap = require('tap')
+const { test } = require('node:test')
+const assert = require('node:assert')
 
 const eslint = new ESLint()
 
 const fixturePath = path.resolve(__dirname, '_fixture')
 
-tap.test('Call eslint on javascript file with errors', async (t) => {
+test('Call eslint on javascript file with errors', async (t) => {
   const file = path.resolve(fixturePath, 'wrong')
   const results = await eslint.lintFiles([file])
 
@@ -60,23 +61,23 @@ tap.test('Call eslint on javascript file with errors', async (t) => {
     }
   ]
 
-  t.same(messages, expectedMessages, 'Got expected error messages')
-
-  t.end()
+  assert.deepStrictEqual(
+    messages,
+    expectedMessages,
+    'Got expected error messages'
+  )
 })
 
-tap.test('Call eslint on javascript file without errors', async (t) => {
+test('Call eslint on javascript file without errors', async (t) => {
   const file = path.resolve(fixturePath, 'correct')
   const results = await eslint.lintFiles([file])
 
   const messages = results[0].messages
 
-  t.same(messages, [], 'Got no error messages')
-
-  t.end()
+  assert.deepStrictEqual(messages, [], 'Got no error messages')
 })
 
-tap.test('Call eslint on vue file with errors', async (t) => {
+test('Call eslint on vue file with errors', async (t) => {
   const src = path.resolve(fixturePath, 'Wrong-vue')
   const file = path.resolve(fixturePath, 'Wrong.vue')
   fs.copyFileSync(src, file)
@@ -109,12 +110,14 @@ tap.test('Call eslint on vue file with errors', async (t) => {
     }
   ]
 
-  t.same(messages, expectedMessages, 'Got expected error messages')
-
-  t.end()
+  assert.deepStrictEqual(
+    messages,
+    expectedMessages,
+    'Got expected error messages'
+  )
 })
 
-tap.test('Call eslint on vue file without errors', async (t) => {
+test('Call eslint on vue file without errors', async (t) => {
   const src = path.resolve(fixturePath, 'CorrectComponent-vue')
   const file = path.resolve(fixturePath, 'CorrectComponent.vue')
   fs.copyFileSync(src, file)
@@ -125,7 +128,5 @@ tap.test('Call eslint on vue file without errors', async (t) => {
 
   const messages = results[0].messages
 
-  t.same(messages, [], 'Got no error messages')
-
-  t.end()
+  assert.deepStrictEqual(messages, [], 'Got no error messages')
 })
